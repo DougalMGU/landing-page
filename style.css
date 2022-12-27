@@ -23,3 +23,11 @@ body {
     display: flex;  /* used to keep footer at the bottom of the page */
     flex-direction: column;  /* used to keep footer at the bottom of the page */
 }
+
+
+/* .container class used to add space on the sides of the page */
+.container {
+    max-width: 1100px;
+    margin: 0 auto;  /* 0 magin on top and bottom, but auto on left and right to put it in the middle*/
+    padding: 0 30px;
+}
