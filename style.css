@@ -1,0 +1,19 @@
+/* Ubuntu Font: Regular 400, Bold 700, and Italic 300 */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,700;1,300&display=swap');
+
+html {
+    height: 100%;
+}
+
+/* Reset Browser Defaults for all element types */
+* {
+    box-sizing: border-box;  /* Dont include padding and border in element size */
+    margin: 0;  /* Remove default browser margin values */
+    padding: 0;  /* Remove default browser padding values */
+} 
+
+/* Apply to all elements within the body */
+body {
+    min-height: 100%;  /* body height must match 100% of viewport height */
+    font-family: 'Ubuntu', sans-serif;
+}
