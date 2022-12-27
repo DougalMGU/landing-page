@@ -59,3 +59,10 @@ body {
 .navbar a:hover {
     color: #3882f6;
 }
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;  /* This centers the navbar elements on the x axis */
+    height: 100%;  /* Tells the Flexbox to use 100% of its parent height (the navbar's height) */
+}
