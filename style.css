@@ -25,6 +25,12 @@ body {
 }
 
 
+/* Other general element properties */
+img {
+    max-width: 45%;
+}
+
+
 /* .container class used to add space on the sides of the page */
 .container {
     max-width: 1100px;
