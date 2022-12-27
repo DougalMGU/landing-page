@@ -15,5 +15,11 @@ html {
 /* Apply to all elements within the body */
 body {
     min-height: 100%;  /* body height must match 100% of viewport height */
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Ubuntu', sans-serif;  /* imported font */
+    font-size: 16px;  /* Base font size */
+    line-height: 1.5;  /* Base text line height */
+    color: #1f2937;  /* Base font color */
+    background: #fff;  /* Base bg color */
+    display: flex;  /* used to keep footer at the bottom of the page */
+    flex-direction: column;  /* used to keep footer at the bottom of the page */
 }
