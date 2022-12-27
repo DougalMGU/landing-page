@@ -39,3 +39,23 @@ body {
     color: #f9faf8;
     height: 60px;
 }
+
+.navbar .menu {
+    list-style-type: none;  /* Remove bullets from the ul elements of the navbar */
+    display: flex;
+}
+
+.navbar .menu li {
+    margin-left: 20px;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;  /* Remove underline from links of the navbar */
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.navbar a:hover {
+    color: #3882f6;
+}
