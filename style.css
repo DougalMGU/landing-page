@@ -31,3 +31,11 @@ body {
     margin: 0 auto;  /* 0 magin on top and bottom, but auto on left and right to put it in the middle*/
     padding: 0 30px;
 }
+
+
+/* Navbar properties */
+.navbar {
+    background: #1f2937;
+    color: #f9faf8;
+    height: 60px;
+}
