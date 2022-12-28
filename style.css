@@ -263,7 +263,56 @@ img {
 }
 
 
+/* Quote section properties */
+.quote-section {
+    min-height: 400px;
+    padding-top: 36px;
+    padding-bottom: 36px;
 
+    background-color: #E5E7EB;
+    color: #1F2937;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    /* debug */
+    /* background-color: rgba(0, 132, 255, 0.25);  */
+}
+
+.quote-section .container {
+    max-width: 768px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* flex-wrap: wrap; */
+    /* align-items: center; */
+    gap: 24px;
+    
+    /* debug */
+    /* background-color: rgb(255, 0, 0, 0.25);  */
+}
+
+.quote-section .quote {
+    text-align: center;
+
+    font-size: 36px;
+    font-style: italic;
+    font-weight: light;
+
+    /* debug */
+    /* background-color: rgba(99, 99, 99, 0.25);  */
+}
+
+.quote-section .cite {
+    align-self: flex-end;
+
+    font-weight: bold;
+
+    /* debug */
+    /* background-color: rgba(99, 99, 99, 0.25);  */
+}
 
 
 
