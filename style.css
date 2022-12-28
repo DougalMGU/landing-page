@@ -18,8 +18,8 @@ body {
     font-family: 'Ubuntu', sans-serif;  /* imported font */
     font-size: 16px;  /* Base font size */
     line-height: 1.5;  /* Base text line height */
-    color: #1f2937;  /* Base font color */
-    background: #fff;  /* Base bg color */
+    color: #1F2937;  /* Base font color */
+    background: #FFF;  /* Base bg color */
     display: flex;  /* used to keep footer at the bottom of the page */
     flex-direction: column;  /* used to keep footer at the bottom of the page */
 }
@@ -27,22 +27,23 @@ body {
 
 /* Other general element properties */
 img {
-    max-width: 45%;
+    max-width: 105%;
 }
 
 
 /* .container class used to add space on the sides of the page */
 .container {
     max-width: 1100px;
-    margin: 0 auto;  /* 0 magin on top and bottom, but auto on left and right to put it in the middle*/
-    padding: 0 30px;
+    /* 0 magin on top and bottom, but auto on left and right to put it in the middle*/
+    margin: 0 auto;  
+    padding: 0 36px;
 }
 
 
 /* Navbar properties */
 .navbar {
-    background: #1f2937;
-    color: #f9faf8;
+    background: #1F2937;
+    color: #F9FAF8;
     height: 60px;
 }
 
@@ -61,14 +62,14 @@ img {
 }
 
 .navbar a {
-    color: #fff;
+    color: #FFF;
     text-decoration: none;  /* Remove underline from links of the navbar */
     font-size: 18px;
     font-weight: normal;
 }
 
 .navbar a:hover {
-    color: #3882f6;
+    color: #3882F6;
 }
 
 .navbar .container {
@@ -76,4 +77,113 @@ img {
     justify-content: space-between;
     align-items: center;  /* This centers the navbar elements on the x axis */
     height: 100%;  /* Tells the Flexbox to use 100% of its parent height (the navbar's height) */
+}
+
+
+/* Header properties */
+.header {
+    background-color: #1F2937;
+    color: #F9FAF8;
+    min-height: 400px;
+    padding-top: 36px;
+    padding-bottom: 36px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    /* debug */
+    /* background-color: rgba(0, 132, 255, 0.25);  */
+}
+
+.header h1 { 
+    font-size: 48px;  /* about 3rem */
+    font-weight: bold;
+    line-height: 1.0;
+
+    /* debug */
+    /* background-color: rgba(255, 251, 0, 0.25);  */
+}
+
+.header p {
+    font-size: 18px;
+    font-weight: normal;
+    color: #E5E7EB;
+    margin-top: 16px;
+    margin-bottom: 32px;
+
+    /* debug */
+    /* background-color: rgba(255, 251, 0, 0.25); */
+}
+
+.header button {
+    padding: 9px 36px;
+    border-radius: 9px;
+    background: #3882F6;
+    color: #F9FAF8;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: auto;
+
+    /* debug */
+    /* background-color: rgba(255, 251, 0, 0.25);   */
+}
+
+.header img {
+    max-width: 420px;
+    /* height: auto; */
+
+    /* prevent img from stretching vertically */
+    align-self: center;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 72px;
+    
+    /* debug */
+    /* background-color: rgb(255, 0, 0, 0.25);  */
+}
+
+.header .container .left-column {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex: auto;
+    flex-wrap: wrap;
+
+    /* debug */
+    /* background-color: rgb(255, 0, 0, 0.25);   */
+}
+
+
+
+
+
+
+/* Change properties when screen width is below 768px for responsiveness */
+@media(max-width: 768px) {
+
+    /* switch flex-direction to column */
+    .header .container {
+        flex-direction: column;
+        text-align: center;
+        gap: 36px;
+    }
+
+    .header .container .left-column {
+        padding-right: 0;
+    }
+
+    .header h1 {
+        align-self: center;
+    }
+
+    .header button {
+        align-self: center;
+    }
 }
