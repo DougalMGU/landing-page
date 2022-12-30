@@ -1,0 +1,74 @@
+/* Header properties */
+.section.header {
+    background-color: #1F2937;
+    color: #F9FAF8;
+}
+
+.header .flexbox .left-column {
+    display: flex;
+    flex-direction: column;
+
+    /* debug layout */
+    background-color: rgb(0, 0, 255, 0.25);  
+}
+
+.header h1 { 
+    font-size: 48px;  /* about 3rem */
+    font-weight: bold;
+    line-height: 1.0;
+
+    /* debug layout */
+    background-color: rgba(255, 0, 255, 0.25); 
+}
+
+.header p {
+    font-size: 18px;
+    font-weight: normal;
+    color: #E5E7EB;
+    margin-top: 16px;
+    margin-bottom: 32px;
+
+    /* debug layout */
+    background-color: rgba(255, 0, 255, 0.25); 
+}
+
+.header button {
+    margin-top: auto;
+    align-self: flex-start;
+
+    padding: 9px 36px;
+    border-radius: 9px;
+    background: #3882F6;
+    color: #F9FAF8;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.header img {
+    max-width: 420px;
+
+    /* prevent img from stretching vertically */
+    align-self: center;
+}
+
+
+/* Adjust when screen under 768px width */
+@media(max-width: 768px) {
+
+    /* switch flex-direction to column */
+    .header .flexbox {
+        flex-direction: column;
+        text-align: center;
+        gap: 36px;
+    }
+
+    .header h1, .header p, .header button {
+        align-self: center;
+        margin-left: 36px;
+        margin-right: 36px;
+    }
+
+    .header img {
+        max-width: 336px;
+    }
+}

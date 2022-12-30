@@ -1,0 +1,52 @@
+/* Navbar properties */
+.section.navbar {
+    min-height: 60px;
+    height: 60px;
+
+    background: #1F2937;
+    color: #F9FAF8;
+}
+
+.navbar .content-area {
+    /* override .content-area vertical padding */
+    padding: 0px 36px;
+}
+
+.navbar .flexbox {
+    justify-content: space-between;
+    align-items: center;
+    gap: 36px;
+}
+
+.navbar .logo {
+    display: flex;
+    flex-shrink: 0;
+
+    font-size: 24px;
+    font-weight: bold;
+
+    /* debug layout */
+    background-color: rgba(0, 0, 255, 0.25); 
+}
+
+.navbar .menu {
+    list-style-type: none;  /* Remove bullets from the ul elements of the navbar */
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    /* debug layout */
+    background-color: rgba(0, 0, 255, 0.25); 
+}
+
+.navbar .menu li {
+    margin-left: 20px;
+}
+
+.navbar a {
+    /* Remove underline from links */
+    text-decoration: none;  
+    font-size: 18px;
+    font-weight: normal;
+}

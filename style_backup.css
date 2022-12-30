@@ -1,3 +1,169 @@
+/* Ubuntu Font: Regular 400, Bold 700, and Italic 300 */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,700;1,300&display=swap');
+
+html {
+    height: 100%;
+}
+
+/* Reset Browser Defaults for all element types */
+* {
+    box-sizing: border-box;  /* Dont include padding and border in element size */
+    margin: 0;  /* Remove default browser margin values */
+    padding: 0;  /* Remove default browser padding values */
+} 
+
+/* Apply to all elements within the body */
+body {
+    min-height: 100%;  /* body height must match 100% of viewport height */
+    font-family: 'Ubuntu', sans-serif;  /* imported font */
+    font-size: 16px;  /* Base font size */
+    line-height: 1.5;  /* Base text line height */
+    color: #1F2937;  /* Base font color */
+    background: #FFF;  /* Base bg color */
+    display: flex;  /* used to keep footer at the bottom of the page */
+    flex-direction: column;  /* used to keep footer at the bottom of the page */
+}
+
+
+/* Other general element properties */
+img {
+    max-width: 105%;
+}
+
+.svg-path {
+    fill: #3882F6;
+    max-width: 100%;
+}
+
+/* .container class used to add space on the sides of the page */
+.container {
+    max-width: 1100px;
+    /* 0 magin on top and bottom, but auto on left and right to put it in the middle*/
+    margin: 0 auto;  
+    padding: 0 36px;
+}
+
+
+/* Navbar properties */
+.navbar {
+    background: #1F2937;
+    color: #F9FAF8;
+    height: 60px;
+}
+
+.navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar .menu {
+    list-style-type: none;  /* Remove bullets from the ul elements of the navbar */
+    display: flex;
+}
+
+.navbar .menu li {
+    margin-left: 20px;
+}
+
+.navbar a {
+    color: #FFF;
+    text-decoration: none;  /* Remove underline from links of the navbar */
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.navbar a:hover {
+    color: #3882F6;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;  /* This centers the navbar elements on the x axis */
+    height: 100%;  /* Tells the Flexbox to use 100% of its parent height (the navbar's height) */
+}
+
+
+/* Header properties */
+.header {
+    background-color: #1F2937;
+    color: #F9FAF8;
+    min-height: 400px;
+    padding-top: 36px;
+    padding-bottom: 36px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    /* debug */
+    /* background-color: rgba(0, 132, 255, 0.25);  */
+}
+
+.header h1 { 
+    font-size: 48px;  /* about 3rem */
+    font-weight: bold;
+    line-height: 1.0;
+
+    /* debug */
+    /* background-color: rgba(255, 251, 0, 0.25);  */
+}
+
+.header p {
+    font-size: 18px;
+    font-weight: normal;
+    color: #E5E7EB;
+    margin-top: 16px;
+    margin-bottom: 32px;
+
+    /* debug */
+    /* background-color: rgba(255, 251, 0, 0.25); */
+}
+
+.header button {
+    padding: 9px 36px;
+    border-radius: 9px;
+    background: #3882F6;
+    color: #F9FAF8;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: auto;
+
+    /* debug */
+    /* background-color: rgba(255, 251, 0, 0.25);   */
+}
+
+.header img {
+    max-width: 420px;
+    /* height: auto; */
+
+    /* prevent img from stretching vertically */
+    align-self: center;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 72px;
+    
+    /* debug */
+    background-color: rgb(255, 0, 0, 0.25); 
+}
+
+.header .container .left-column {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex: auto;
+    flex-wrap: wrap;
+
+    /* debug */
+    /* background-color: rgb(255, 0, 0, 0.25);   */
+}
+
 
 /* Thumbs section properties */
 .thumbs {

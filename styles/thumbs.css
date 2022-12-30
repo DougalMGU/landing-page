@@ -1,0 +1,91 @@
+/* Thumbs section properties */
+.section.thumbs {
+    background-color: #1F2937;
+    color: #F9FAF8;
+}
+
+.thumbs .flexbox {
+    flex-direction: column;
+    gap: 18px;
+}
+
+.thumbs .flexbox .top-row {
+    display: flex;
+    justify-content: center;
+
+    /* debug layout */
+    background-color: rgb(0, 0, 255, 0.25);  
+}
+
+.thumbs .flexbox .bottom-row {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    /* debug layout */
+    background-color: rgb(0, 0, 255, 0.25);  
+}
+
+.box {
+    display: flex;
+    /* Place thumb image above the subtext */
+    flex-direction: column;
+    /* Center thumb image */
+    align-items: center;
+    /* Text width matches image width */
+    width: min-content;
+
+    margin: 24px 18px;
+    padding: 18px 24px;
+
+    /* Round corners */
+    border-radius: 10px;
+    /* box-shadow: 0 3px 5px rgba(0, 0, 0, 0.6); */
+
+    /* debug layout */
+    background-color: rgb(255, 0, 255, 0.25); 
+}
+
+.thumbs h2 {
+    font-size: 36px;  /* about 3rem */
+    font-weight: bold;
+    line-height: 1.2;
+
+    /* debug */
+    background-color: rgb(255, 0, 255, 0.25);
+}
+
+.thumbs svg {
+    width: 156px;
+    height: 156px;
+
+    /* debug layout */
+    background-color: rgb(255, 0, 255, 0.25);
+}
+
+.thumbs p {
+    margin-top: 9px;
+
+    font-size: 16px;
+    font-weight: normal;
+    text-align: center;
+    line-height: 1.2;
+
+    /* debug */
+    background-color: rgb(255, 0, 255, 0.25);
+}
+
+
+/* Adjust when screen under 768px width */
+@media(max-width: 768px) {
+
+    /* switch flex-direction to column */
+    .thumbs h2 {
+        text-align: center;
+    }
+
+    .thumbs svg {
+        width: 96px;
+        height: 96px;
+    }
+}

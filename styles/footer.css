@@ -1,0 +1,78 @@
+/* Footer properties */
+.section.footer {
+    min-height: 60px;
+    height: 60px;
+
+    /* keep footer at the bottom of the page via flex + auto margins */
+    margin-top: auto;  
+
+    background: #1F2937;
+    color: #F9FAF8;
+}
+
+.footer .content-area {
+    /* override .content-area vertical padding */
+    padding: 0px 36px;
+}
+
+.footer .flexbox {
+    display: flex;
+    justify-content: space-between;
+    /* Center the footer elements on the x axis */
+    align-items: center;  
+}
+
+.footer .copyright {
+    /* debug layout */
+    background-color: rgb(0, 0, 255, 0.25);  
+}
+
+.footer .nav {
+    /* Remove bullets from the ul elements */
+    list-style-type: none;  
+
+    display: flex;
+
+    /* debug layout */
+    background-color: rgb(0, 0, 255, 0.25);  
+}
+
+.footer .nav li {
+    margin-left: 20px;
+}
+
+.footer .other {
+    /* debug layout */
+    background-color: rgb(0, 0, 255, 0.25);  
+}
+
+.footer a {
+    /* Remove underline from links */
+    text-decoration: none;  
+    font-size: 18px;
+    font-weight: normal;
+}
+
+
+/* Adjust when screen under 768px width */
+@media(max-width: 768px) {
+    .section.footer {
+        /* min-height: 100%; */
+        height: 100%;
+    }
+
+    /* switch flex-direction to column */
+    .footer .flexbox {
+        flex-direction: column;
+        text-align: center;
+        gap: 18px;
+    }
+
+    .footer .copyright {
+        margin-top: 36px;
+    }
+
+    .footer .other {
+        margin-bottom: 36px;
+    }
+}
