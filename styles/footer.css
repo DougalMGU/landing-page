@@ -24,7 +24,7 @@
 
 .footer .copyright {
     /* debug layout */
-    background-color: rgb(0, 0, 255, 0.25);  
+    /* background-color: rgb(0, 0, 255, 0.25);   */
 }
 
 .footer .nav {
@@ -34,7 +34,7 @@
     display: flex;
 
     /* debug layout */
-    background-color: rgb(0, 0, 255, 0.25);  
+    /* background-color: rgb(0, 0, 255, 0.25);   */
 }
 
 .footer .nav li {
@@ -43,7 +43,7 @@
 
 .footer .other {
     /* debug layout */
-    background-color: rgb(0, 0, 255, 0.25);  
+    /* background-color: rgb(0, 0, 255, 0.25);   */
 }
 
 .footer a {

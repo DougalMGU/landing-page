@@ -9,7 +9,7 @@
     flex-direction: column;
 
     /* debug layout */
-    background-color: rgb(0, 0, 255, 0.25);  
+    /* background-color: rgb(0, 0, 255, 0.25);   */
 }
 
 .header h1 { 
@@ -18,7 +18,7 @@
     line-height: 1.0;
 
     /* debug layout */
-    background-color: rgba(255, 0, 255, 0.25); 
+    /* background-color: rgba(255, 0, 255, 0.25);  */
 }
 
 .header p {
@@ -29,7 +29,7 @@
     margin-bottom: 32px;
 
     /* debug layout */
-    background-color: rgba(255, 0, 255, 0.25); 
+    /* background-color: rgba(255, 0, 255, 0.25);  */
 }
 
 .header button {

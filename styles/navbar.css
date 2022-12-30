@@ -26,7 +26,7 @@
     font-weight: bold;
 
     /* debug layout */
-    background-color: rgba(0, 0, 255, 0.25); 
+    /* background-color: rgba(0, 0, 255, 0.25);  */
 }
 
 .navbar .menu {
@@ -37,7 +37,7 @@
     align-items: center;
 
     /* debug layout */
-    background-color: rgba(0, 0, 255, 0.25); 
+    /* background-color: rgba(0, 0, 255, 0.25);  */
 }
 
 .navbar .menu li {

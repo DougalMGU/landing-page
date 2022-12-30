@@ -36,7 +36,7 @@ body {
     align-items: center;
 
     /* debug layout */
-    border-bottom: 1px dashed rgb(255, 0, 0);
+    /* border-bottom: 1px dashed rgb(255, 0, 0); */
 }
 
 /* add space on the sides of the page */
@@ -53,7 +53,7 @@ body {
     display: flex;
 
     /* debug layout */
-    background-color: rgb(255, 0, 0, 0.25);
+    /* background-color: rgb(255, 0, 0, 0.25); */
 }
 
 .flexbox {
@@ -63,7 +63,7 @@ body {
     gap: 72px;
     
     /* debug layout */
-    background-color: rgba(0, 255, 0, 0.25); 
+    /* background-color: rgba(0, 255, 0, 0.25);  */
 }
 
 
