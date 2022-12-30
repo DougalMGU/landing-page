@@ -1,14 +1,16 @@
 /* CTA properties */
 .section.cta {
-    background-color: #1F2937;
-    color: #F9FAF8;
+    background-color: #F9FAF8;
+    color: #1F2937;
 }
 
 .cta .flexbox {
     min-height: 144px;
-    padding: 36px;
+    padding: 36px 72px;
 
-    border: 2px solid #F9FAF8;
+    gap: 36px;
+
+    /* border: 2px solid #F9FAF8; */
     border-radius: 9px;
     background: #3882F6;
     color: #F9FAF8;
@@ -18,6 +20,8 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+
+    padding-right: 36px;
 
     /* debug layout */
     /* background-color: rgb(0, 0, 255, 0.25);   */
@@ -55,5 +59,9 @@
         flex-direction: column;
         text-align: center;
         gap: 36px;
+    }
+
+    .cta .flexbox .left-column {
+        padding-right: 0px;
     }
 }
