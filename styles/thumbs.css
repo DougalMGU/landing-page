@@ -1,7 +1,7 @@
 /* Thumbs section properties */
 .section.thumbs {
-    background-color: #1F2937;
-    color: #F9FAF8;
+    background-color: #F9FAF8;
+    color: #1F2937;
 }
 
 .thumbs .flexbox {
@@ -39,7 +39,8 @@
     padding: 18px 24px;
 
     /* Round corners */
-    border-radius: 10px;
+    /* border-radius: 9px; */
+    /* border: 1px solid #3882F6; */
     /* box-shadow: 0 3px 5px rgba(0, 0, 0, 0.6); */
 
     /* debug layout */
@@ -59,8 +60,15 @@
     width: 156px;
     height: 156px;
 
+    border: 3px solid #3882F6;
+    border-radius: 9px;
+
     /* debug layout */
     /* background-color: rgb(255, 0, 255, 0.25); */
+}
+
+.thumbs .svg-path {
+    fill: #796854;
 }
 
 .thumbs p {
