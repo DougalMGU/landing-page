@@ -78,6 +78,24 @@ img {
     max-width: 100%;
 }
 
+/* Apply to all buttons */
+button {
+    padding: 9px 36px;
+    border: none;
+    border-radius: 9px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.6);
+    background: #3882F6;
+    color: #F9FAF8;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+button:hover {
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.6);
+    background: #1661DA;
+    color: #E7E7E7;
+}
+
 /* Apply to all links */
 a {
     color: #FFF;
